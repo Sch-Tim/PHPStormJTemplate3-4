@@ -113,7 +113,7 @@ class TplCompTestHelper
 	static public function getPageClass()
 	{
 		$activeMenu = Factory::getApplication()->getMenu()->getActive();
-		$pageclass  = ($activeMenu) ? $activeMenu->params->get('pageclass_sfx', '') : '';
+		$pageclass  = ($activeMenu) ? $activeMenu->pageclass_sfx : '';
 
 		return $pageclass;
 	}
@@ -162,7 +162,7 @@ class TplCompTestHelper
 
 	/**
 	 * Generate a list of useful CSS classes for the body
-	 *
+	 *d
 	 * @access public
 	 *
 	 * @return boolean
